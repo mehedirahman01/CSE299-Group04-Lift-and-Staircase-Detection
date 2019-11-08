@@ -55,6 +55,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/zGyroValue"
         android:layout_below="@id/yGyroValue"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart"
+        android:enabled="true"
+        android:text="Start" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStop"
+        android:enabled="true"
+        android:text="Stop" />
+
+
 </LinearLayout>
 
 
