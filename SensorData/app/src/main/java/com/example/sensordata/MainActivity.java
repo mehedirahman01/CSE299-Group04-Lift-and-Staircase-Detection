@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     private String getStorageDir() {
-        return "/storage/emulated/0/SensorLogger/";
+        return this.getExternalFilesDir(null).getAbsolutePath();
     }
 
 
