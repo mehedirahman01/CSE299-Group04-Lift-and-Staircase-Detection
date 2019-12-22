@@ -2,7 +2,6 @@
 """
 Spyder Editor
 
-This is a temporary script file.
 """
 
 import pandas as pd
@@ -20,7 +19,7 @@ LABELS = ['Downstairs',
           'LiftUp']
 
 
-df=pd.read_csv('C:\\Users\\Mehedi\\Desktop\\Final Dataset\\finalfinal.csv')
+df=pd.read_csv('C:\Users\Mehedi\CSE299-Group04-Lift-and-Staircase-Detection\Datasets\\final_dataset.csv')
 df
 
 df.columns=['activity','time','Sensor','X','Y','Z']
@@ -39,12 +38,12 @@ y_pred=svclassifier.predict(x_test)
 y_pred_train=svclassifier.predict(x_train)
 print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
-#print(classification_report(y_train,y_pred_train))
+print(classification_report(y_train,y_pred_train))
 
 print("Train accuracy: " +str(accuracy_score(y_train,y_pred_train)))
 print ("Test accuracy: " +str(accuracy_score(y_test,y_pred)))
 
 
-#porter=Porter(svclassifier,language='java')
-#output=porter.export(embed_data=True)
-#print(output)
+porter=Porter(svclassifier,language='java')
+output=porter.export(embed_data=True)
+print(output)
